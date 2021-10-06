@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-06 14:22:22 by Eclipse SUMO GUI Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <route-files value="Route1.rou.xml,Pedestrians.rou.xml"/>
+        <additional-files value="osm.poly.xml,Additional.add.xml,junction.poly.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="65507"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <personinfo id="person_1" depart="5.00" type="DEFAULT_PEDTYPE">
+        <walk depart="5.00" departPos="0.00" arrival="26.00" arrivalPos="27.94" duration="21.00" routeLength="27.94" timeLoss="2.42" maxSpeed="1.50"/>
+        <stop duration="5.00" arrival="31.00" arrivalPos="27.94" actType="waiting"/>
+        <ride waitingTime="41.00" vehicle="vehicle_0" depart="72.00" arrival="149.00" arrivalPos="91.48" duration="77.00" routeLength="237.57" timeLoss="11.25"/>
+    </personinfo>
+    <personinfo id="person_2" depart="10.00" type="DEFAULT_PEDTYPE">
+        <walk depart="10.00" departPos="0.00" arrival="35.00" arrivalPos="32.50" duration="25.00" routeLength="32.50" timeLoss="2.29" maxSpeed="1.43"/>
+        <stop duration="5.00" arrival="40.00" arrivalPos="32.50" actType="waiting"/>
+        <ride waitingTime="68.00" vehicle="vehicle_0" depart="108.00" arrival="149.00" arrivalPos="91.48" duration="41.00" routeLength="178.64" timeLoss="6.68"/>
+    </personinfo>
+    <tripinfo id="vehicle_0" depart="20.00" departLane="-205752980#2_1" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="149.00" arrivalLane="28394132#3_0" arrivalPos="91.48" arrivalSpeed="3.96" duration="129.00" routeLength="386.75" waitingTime="1.00" waitingCount="1" stopTime="40.00" timeLoss="19.28" rerouteNo="0" devices="tripinfo_vehicle_0 person_vehicle_0" vType="vType_0" speedFactor="1.03" vaporized=""/>
+    <personinfo id="person_0" depart="0.00" type="DEFAULT_PEDTYPE">
+        <walk depart="0.00" departPos="0.00" arrival="20.00" arrivalPos="24.20" duration="20.00" routeLength="24.20" timeLoss="2.76" maxSpeed="1.40"/>
+        <stop duration="5.00" arrival="25.00" arrivalPos="24.20" actType="waiting"/>
+        <ride waitingTime="40.00" vehicle="vehicle_1" depart="65.00" arrival="151.00" arrivalPos="55.01" duration="86.00" routeLength="213.48" timeLoss="12.47"/>
+    </personinfo>
+    <personinfo id="person_3" depart="15.00" type="DEFAULT_PEDTYPE">
+        <walk depart="15.00" departPos="0.00" arrival="63.00" arrivalPos="49.65" duration="48.00" routeLength="49.65" timeLoss="4.98" maxSpeed="1.15"/>
+        <stop duration="10.00" arrival="73.00" arrivalPos="49.65" actType="waiting"/>
+        <ride waitingTime="33.00" vehicle="vehicle_1" depart="106.00" arrival="151.00" arrivalPos="55.01" duration="45.00" routeLength="127.94" timeLoss="7.15"/>
+    </personinfo>
+    <personinfo id="person_4" depart="20.00" type="DEFAULT_PEDTYPE">
+        <walk depart="20.00" departPos="0.00" arrival="89.00" arrivalPos="86.92" duration="69.00" routeLength="86.92" timeLoss="9.16" maxSpeed="1.45"/>
+        <stop duration="10.00" arrival="99.00" arrivalPos="86.92" actType="waiting"/>
+        <ride waitingTime="39.00" vehicle="vehicle_1" depart="138.00" arrival="151.00" arrivalPos="55.01" duration="13.00" routeLength="90.72" timeLoss="2.83"/>
+    </personinfo>
+    <tripinfo id="vehicle_1" depart="25.00" departLane="28456361#0_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="151.00" arrivalLane="gneE3_0" arrivalPos="55.01" arrivalSpeed="12.76" duration="126.00" routeLength="347.50" waitingTime="0.00" waitingCount="0" stopTime="60.00" timeLoss="16.54" rerouteNo="0" devices="tripinfo_vehicle_1 person_vehicle_1" vType="vType_2" speedFactor="0.97" vaporized=""/>
+</tripinfos>

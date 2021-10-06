@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-05 12:32:57 by Eclipse SUMO netedit Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\Route1.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+<trip id="vehicle_0" type="vType_0" depart="0.00" from="-205752980#2" to="28394132#3" via="-205752980#1 -28394132#2 28394132#2"/>
+    <trip id="vehicle_2" type="vType_1" depart="0.00" color="red" from="28456361#0" to="16944921#1" via="28456361#1"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="vType_0" vClass="taxi" personCapacity="8" color="yellow"/>
+    <vType id="vType_2" vClass="taxi" personCapacity="8" color="red"/>
+    
+    <route edges="-205752980#2 -205752980#1 -28394132#2 28394132#2 28394132#3" color="yellow" id="route_0"/>
+    <route edges="28456361#0 28456361#1 16944921#1 gneE3" color="red" id="route_2"/>
+	
+	<vehicle id="vehicle_0" type="vType_0" depart="20.00" route="route_0" line="taxi">
+        <stop busStop="busStop_1" duration="20.00"/>
+        <stop busStop="busStop_2" duration="20.00"/>
+    </vehicle>
+	
+    <vehicle id="vehicle_1" type="vType_2" depart="25.00" route="route_2" line="taxi">
+        <stop busStop="busStop_28456361#1_1_0" duration="20.00"/>
+		<stop busStop="busStop_3" duration="20.00"/>
+		<stop busStop="busStop_4" duration="20.00"/>
+    </vehicle>
+</routes>

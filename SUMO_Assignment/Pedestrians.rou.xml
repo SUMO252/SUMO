@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-05 13:42:46 by Eclipse SUMO netedit Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="C:\Users\dell\Desktop\SUMO\Assignment\Trail%202\2021-10-05-11-46-51\Pedestrians.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pType_0" vClass="pedestrian"/>
+    <vType id="pType_1" vClass="pedestrian"/>
+    <vType id="pType_2" vClass="pedestrian"/>
+    <vType id="pType_3" vClass="pedestrian"/>
+    <vType id="pType_4" vClass="pedestrian"/>
+	
+	<person id="person_0" depart="0.00" color="green">
+	    <walk from="28456361#1" busStop="busStop_28456361#1_1_0"/>
+		<stop busStop="busStop_28456361#1_1_0" duration="5.00"/>
+	    <ride from="28456361#1" to="gneE3" lines="taxi"/>
+    </person>
+	<person id="person_1" depart="5.00" color="green">
+	    <walk from="-205752980#1" busStop="busStop_1"/>
+		<stop busStop="busStop_1" duration="5.00"/>
+	    <ride from="-205752980#1" to="28394132#3" lines="taxi"/>
+    </person>
+	<person id="person_2" depart="10.00" color="green">
+	    <walk from="-28394132#2" busStop="busStop_2"/>
+		<stop busStop="busStop_2" duration="5.00"/>
+	    <ride from="-28394132#2" to="28394132#3" lines="taxi"/>
+    </person>
+	<person id="person_3" depart="15.00" color="green">
+	    <walk from="16944921#1" busStop="busStop_3"/>
+		<stop busStop="busStop_3" duration="10.00"/>
+	    <ride from="16944921#1" to="gneE3" lines="taxi"/>
+    </person>
+	<person id="person_4" depart="20.00" color="green">
+	    <walk from="16944921#1" busStop="busStop_4"/>
+	    <stop busStop="busStop_4" duration="10.00"/>
+	    <ride from="16944921#1" to="gneE3" lines="taxi"/>
+    </person>
+</routes>
