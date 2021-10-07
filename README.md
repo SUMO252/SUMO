@@ -7,7 +7,7 @@ Osm.net.xml - Consist of information of all the lanes, junctions, and others in 
 <br /> Route1_rou.xml - The route of vehicles, trips, stops, etc.
 <br /> Pedestrains.rou.xml - Information regarding the pedestrian's route and type.
 <br /> Additional.add.xml - This file consists of added bus spots in the network.
-<br /> osm.sumocfg - This file takes the input from all the above-mentioned files to run the simulation accordingly.
+<br /> osm.sumocfg - This file takes the input from all the above-mentioned files to run the simulation accordingly. The vehicle_0(Yellow) picks up two passengers and, vehicle_1 (Red) picks up three passengers.
 
 # Output_SUMO
 
