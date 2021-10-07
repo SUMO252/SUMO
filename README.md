@@ -17,7 +17,7 @@ output.xml - This is an FCD-export file, which consists of all the information o
 
 # Output_Python
 
-Output_script.py - This is a python file with code to create an Excel file with emission data for all the time steps (CO2, CO, HC, NOx, PMx, Fuel).
+Output_script.py - This is a python file with code to create an Excel file(vehicle_0.csv, vehicle_1.csv) with emission data for all the time steps (CO2, CO, HC, NOx, PMx, Fuel).
 
 # Output_TraCI
 
