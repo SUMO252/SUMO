@@ -1,0 +1,5 @@
+  <additional>
+    
+	 <vTypeProbe id="vehicle_0" type="vType_0" freq="1" file="vehicle_0.xml"/>
+	 <vTypeProbe id="vehicle_1" type="vType_2" freq="1" file="vehicle_1.xml"/>
+</additional>
